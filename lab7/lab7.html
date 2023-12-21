@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Графический Редактор</title>
+    <style>
+        svg {
+            border: 1px solid #000; 
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <input type="radio" id="circle" name="shape" value="circle" checked>
+        <label for="circle">Круг</label>
+        <input type="radio" id="rectangle" name="shape" value="rectangle">
+        <label for="rectangle">Квадрат</label>
+        <span id="lineWidthLabel">Толщина линии: 1</span>
+        <input type="range" id="lineWidth" min="1" max="10" value="1">
+        <span id="lineColorLabel">Цвет линии: #000000</span>
+        <input type="color" id="lineColor" value="#000000">
+        <span id="fillColorLabel">Цвет заливки: #ffffff</span>
+        <input type="color" id="fillColor" value="#ffffff">
+    </div>
+    <svg id="svg" width="1200" height="600"></svg>
+    <button id="clearCanvas">Очистить холст</button>
+     <script src="index.js"></script>
+</body>
+</html>
+
